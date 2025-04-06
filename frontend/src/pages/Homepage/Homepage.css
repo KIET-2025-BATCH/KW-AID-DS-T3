@@ -1,0 +1,198 @@
+:root {
+  --sh-primary-color: #0073e6;
+  --sh-secondary-color: #333;
+  --sh-background-light: #f5f5f5;
+  --sh-background-white: #fff;
+  --sh-shadow-color: rgba(0, 0, 0, 0.1);
+  --sh-text-dark: #333;
+  --sh-text-light: #555;
+}
+
+.sh-home-container {
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+}
+
+/* Hero Section */
+.sh-hero {
+  display: flex;
+  align-items: center;
+  padding: 60px 40px;
+  background-color: var(--sh-background-light);
+}
+
+.sh-hero-content {
+  flex: 1;
+  padding-right: 40px;
+}
+
+.sh-hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: var(--sh-text-dark);
+}
+
+.sh-hero p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  color: var(--sh-text-light);
+  line-height: 1.6;
+}
+
+.sh-cta-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.sh-btn {
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sh-primary-btn {
+  background-color: var(--sh-primary-color);
+  color: white;
+}
+
+.sh-primary-btn:hover {
+  background-color: #005bb7;
+}
+
+.sh-secondary-btn {
+  background-color: transparent;
+  color: var(--sh-primary-color);
+  border: 2px solid var(--sh-primary-color);
+}
+
+.sh-secondary-btn:hover {
+  background-color: rgba(0, 115, 230, 0.1);
+}
+
+.sh-hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sh-placeholder-image {
+  background-color: #e0e0e0;
+  width: 400px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  color: var(--sh-text-light);
+  font-weight: bold;
+}
+
+/* Features Section */
+.sh-features {
+  padding: 60px 40px;
+  background-color: var(--sh-background-white);
+  text-align: center;
+}
+
+.sh-features h2 {
+  font-size: 2em;
+  margin-bottom: 40px;
+  color: var(--sh-text-dark);
+}
+
+.sh-feature-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.sh-feature-card {
+  flex: 1;
+  min-width: 220px;
+  background-color: var(--sh-background-light);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px var(--sh-shadow-color);
+  transition: transform 0.3s ease;
+}
+
+.sh-feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.sh-feature-icon {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+}
+
+.sh-feature-card h3 {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  color: var(--sh-text-dark);
+}
+
+.sh-feature-card p {
+  color: var(--sh-text-light);
+  line-height: 1.5;
+}
+
+/* Call to Action Section */
+.sh-call-to-action {
+  background-color: var(--sh-primary-color);
+  padding: 60px 40px;
+  text-align: center;
+  color: white;
+}
+
+.sh-call-to-action h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.sh-call-to-action p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sh-call-to-action .sh-btn {
+  background-color: white;
+  color: var(--sh-primary-color);
+}
+
+.sh-call-to-action .sh-btn:hover {
+  background-color: #f0f0f0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sh-hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .sh-hero-content {
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+  
+  .sh-cta-buttons {
+    justify-content: center;
+  }
+  
+  .sh-feature-cards {
+    flex-direction: column;
+  }
+  
+  .sh-feature-card {
+    margin-bottom: 20px;
+  }
+}
